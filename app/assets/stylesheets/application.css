@@ -13,24 +13,54 @@
  *= require_tree .
  *= require_self
  */
- body{
+ html {
+   box-sizing: border-box;
+}
+ *, *:before, *:after {
+   box-sizing: inherit;
+}
+
+.debug{
+  border: 1px solid red;
+}
+
+body{
   background-image: url("https://download.unsplash.com/5/unsplash-bonus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
- }
+}
 
- .waves-effect{
-  font-family: 'Shadows Into Light', cursive;
-  background-color: #4D1A00;
+.button {
+  text-align: center;
+  margin-top: 45%;
+}
+
+.waves-effect.waves-light {
+  background-color: #532B16;
   color: #B56C47;
- }
+  font-family: 'Shadows Into Light', cursive;
+  font-style: bold;
+  font-size: 2em;
+}
 
- .waves-effect:hover{
+.waves-effect.waves-light:hover {
   background-color: #B56C47;
-  color: #4D1A00;
- }
+  color: #532B16;
+}
 
- .fa{
-  color: white;
- }
+.fa {
+  color: #FFFFFF;
+}
 
+.fa:hover {
+  color: #0099CC;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+}
+
+i {
+  padding: 10px;
+}
