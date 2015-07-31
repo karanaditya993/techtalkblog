@@ -25,6 +25,7 @@
 }
 
 body{
+  font-family: 'Shadows Into Light', cursive;
   background-image: url("https://download.unsplash.com/5/unsplash-bonus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +39,6 @@ body{
 .waves-effect.waves-light {
   background-color: #532B16;
   color: #B56C47;
-  font-family: 'Shadows Into Light', cursive;
   font-style: bold;
   font-size: 2em;
 }
@@ -59,8 +59,38 @@ body{
 .sidebar {
   position: absolute;
   top: 0;
+  padding-top: 35px;
 }
 
 i {
   padding: 10px;
+}
+#login-button {
+  background-color: #532B16;
+  color: #B56C47;
+  font-size: 1.2em;
+}
+
+#login-button:hover {
+  background-color: #B56C47;
+  color: #532B16;
+}
+
+.logout {
+  position: absolute;
+  top: 0;
+}
+
+.logout:hover{
+  -webkit-filter: drop-shadow(5px 5px 5px white);
+  filter:         drop-shadow(5px 5px 5px white);
+}
+
+.input-field .label {
+  color: black;
+  font-size: 1.5em;
+ }
+
+.remember_me {
+  color: black;
 }
