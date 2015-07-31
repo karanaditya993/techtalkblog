@@ -10,16 +10,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="header"></div>
   <%= yield %>
-  <div class="sidebar">
-    <ul>
-      <li><a href="https://github.com/karanaditya993"><i class="fa fa-github fa-2x"></i></a></li>
-      <li><a href="https://twitter.com/karanaditya993"><i class="fa fa-twitter fa-2x"></i></a></li>
-      <li><a href="https://linkedin.com/in/karanaditya993"><i class="fa fa-linkedin fa-2x"></i></a></li>
-      <li><a href="https://plus.google.com/+KaranAditya993"><i class="fa fa-google-plus fa-2x"></i></a></li>
-    </ul>
-  </div>
+  <% if user_signed_in? %>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <%= link_to(image_tag("http://findicons.com/files/icons/1063/3d_cartoon_icons_iii/300/windows_close_program.png", :width => "50"), destroy_user_session_path, method: :delete, :class => "logout") %>
+        </li>
+        <li><a href="https://github.com/karanaditya993"><i class="fa fa-github fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/karanaditya993"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="https://linkedin.com/in/karanaditya993"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://plus.google.com/+KaranAditya993"><i class="fa fa-google-plus fa-2x"></i></a></li>
+      </ul>
+    </div>
+  <% end %>
 </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.js"></script>
