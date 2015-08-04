@@ -1,0 +1,2 @@
+module CulPostsHelper
+end
