@@ -1,0 +1,13 @@
+<section>
+  <p><img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/10/collections_enum.jpg"/></p>
+  <p>
+    Programmers are inherently lazy when it comes to writing code. They are always trying to find methods and variables and classes that can do things for them, and more importantly, they try and find ways to reduce the time they spend on writing code. A concise piece of code is much more visually appealing and understandable than a whole bunch of jargon on the screen. One such way that programmers use Ruby's ability to make things easier is the use of an Enumerable method. Enumerable methods are essentially a bunch of methods mixed together that get mixed in with other classes. In this blog post, I will be discussing the importance and meaning of the enumerable method "map".
+  </p>
+  <p>
+    The map enumerable is one that allows you to modify each element in an array or hash. It uses a "block" formation. Inside the block there is a series of instructions that the program follows for each element in the array. Without trying to confuse you too much with the language, I think it might be easier just to show you. Let's say that we are trying to return an array that adds two to every number in an original array. The map enumerable can help us do just that!
+  </p>
+  <p>array.map{|number|number+2}</p>
+  <p>
+    Essentially what the program above is saying is that the map enumerable is called to perform the addition of 2 to each number in the array. The map enumerable is non-destructible, meaning it does not harm the original array. It creates a new array and leaves the original one alone. If for some reason you wanted to modify the original array, you would add the destructive portion to map and call #map! instead. Enumerables make it much easier for programmers to iterate over elements in arrays and hashes.
+  </p>
+</section>
