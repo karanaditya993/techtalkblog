@@ -1,3 +1,34 @@
 <div class="container">
-  <h1>Cultural Posts Index</h1>
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header" style="background-color:#1A6767"><i class="material-icons">restaurant_menu</i>The Kitchen & Table</div>
+      <div class="collapsible-body" style="background-color:white">
+        <%= render 'cul_posts/kitchen_and_table' %>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header" style="background-color:#1A6767"><i class="material-icons">cloud queue</i>Thinking Styles</div>
+      <div class="collapsible-body" style="background-color:white">
+        <%= render 'cul_posts/thinking_style' %>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header" style="background-color:#1A6767"><i class="material-icons"></i>Issues in Tech</div>
+      <div class="collapsible-body" style="background-color:white">
+        <%= render 'cul_posts/issues_in_tech' %>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header" style="background-color:#1A6767"><i class="material-icons">refresh</i>Feedback</div>
+      <div class="collapsible-body" style="background-color:white">
+        <%= render 'cul_posts/feedback' %>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header" style="background-color:#1A6767"><i class="material-icons">people</i>Dealing With Conflict</div>
+      <div class="collapsible-body" style="background-color:white">
+        <%= render 'cul_posts/dealing_with_conflict' %>
+      </div>
+    </li>
+  </ul>
 </div>
