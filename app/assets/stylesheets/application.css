@@ -20,31 +20,48 @@
    box-sizing: inherit;
 }
 
+.row .col {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .debug{
   border: 1px solid red;
+  padding: 0px;
 }
 
 .nav-wrapper {
   background-color: #1A6767;
 }
 
-body{
-  font-family: 'Shadows Into Light', cursive;
+body {
+  font-family: Georgia, Times, serif;
+  /* Location of the image */
   background-image: url("https://download.unsplash.com/5/unsplash-bonus.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.button {
-  text-align: center;
-  margin-top: 45%;
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+     while the background image is loading */
 }
 
 .waves-effect.waves-light {
+  font-family: 'Shadows Into Light', cursive;
   background-color: #532B16;
   color: #B56C47;
-  font-style: bold;
-  font-size: 2em;
+  width: 100%;
 }
 
 .waves-effect.waves-light:hover {
@@ -74,15 +91,6 @@ i {
   font-size: 1.5em;
 }
 
-.karan-logo {
-  width: 20%;
-}
-
-.karan-logo:hover {
-  -webkit-filter: drop-shadow(12px 12px 25px #FFFFFF);
-
-}
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -106,4 +114,15 @@ i {
 
   /* Support for IE. */
   font-feature-settings: 'liga';
+}
+
+blockquote {
+  float: right;
+  width: 275px;
+  font-size: 130%;
+  font-family: Georgia, Times, serif;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  border-top:  1px solid #665544;
+  border-bottom: 1px solid #665544;
 }
