@@ -31,13 +31,13 @@
 }
 
 .nav-wrapper {
-  background-color: #1A6767;
+  background-color: rgba(30, 113, 42, 0.9);
 }
 
 body {
   font-family: Georgia, Times, serif;
   /* Location of the image */
-  background-image: url("https://download.unsplash.com/5/unsplash-bonus.jpg");
+  background-image: url("https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpt1/t31.0-8/11947966_863652797062273_6246046785133075986_o.jpg");
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -55,6 +55,9 @@ body {
 
   /* Set a background color that will be displayed
      while the background image is loading */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .waves-effect.waves-light {
@@ -72,46 +75,15 @@ body {
 .fa {
   color: #FFFFFF;
 }
-.fa-2x {
-  padding: 10px;
-}
-.fa-2x:active {
-  color: #7ac9ed;
-}
-.github {
-  background: #91c661;
-}
 
-.twitter {
-  background: #7ac9ed;
-}
-
-.google-plus {
-  background: #d74d2f;
-}
-
-.linkedin {
-  background: #0c7bb6;
-}
-
-.social-icons:hover {
+.social-icons {
+  display: inline;
+  padding: 25px;
   opacity: 0.7;
 }
 
-.github-sidebar {
-  background: #91c661;
-}
-
-.twitter-sidebar {
-  background: #7ac9ed;
-}
-
-.google-plus-sidebar {
-  background: #d74d2f;
-}
-
-.linkedin-sidebar {
-  background: #0c7bb6;
+.social-icons:hover {
+  opacity: 1.0;
 }
 
 .home-button {
@@ -170,4 +142,11 @@ blockquote {
 img{
   background-attachment: fixed;
   background-position: center center;
+}
+
+.footer-icons {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
 }
