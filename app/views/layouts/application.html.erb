@@ -5,17 +5,30 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <nav>
+  <!-- <nav>
     <div class="nav-wrapper">
-      <%= render "layouts/nav" %>
+      <#%= render "layouts/nav" %>
     </div>
-  </nav>
+  </nav> -->
+  <div class="ui container">
+    <div class="ui large inverted secondary network menu">
+      <a href="#" class="menu-button">
+        <i class="sidebar icon">Menu</i>
+      </a>
+    </div>
+  </div>
+  <div class="ui sidebar">
+    <a class="item">Home</a>
+    <a class="item">About</a>
+    <a class="item">Contact</a>
+    <a class="item">Technical Blog Posts</a>
+    <a class="item">Cultural Blog Posts</a>
+  </div>
   <%= yield %>
   <div class="footer-icons">
     <ul class="footer-list">
@@ -26,7 +39,5 @@
     </ul>
   </div>
 </body>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.js"></script>
 </html>
 

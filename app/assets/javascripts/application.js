@@ -11,19 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
+//= require semantic_ui/semantic_ui
+//= require_self
 //= require_tree .
-$(document).ready(function(){
-  mobileNavigation();
+//= require turbolinks
+
+$(document).on('page:change', function(){
+  sidebarPopOut();
 });
 
-var mobileNavigation = function(){
-  $('.button-collapse').sideNav();
-  $('.button-collapse').sideNav({
-      menuWidth: 240, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    }
-  );
+var sidebarPopOut = function(){
+  $('.menu-button').on('click', function(event){
+      event.preventDefault();
+      $('.ui.sidebar').sidebar('toggle');
+  });
 }
