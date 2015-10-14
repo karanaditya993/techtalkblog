@@ -28,3 +28,4 @@ var sidebarPopOut = function(){
       $('.ui.sidebar').sidebar('toggle');
   });
 }
+
